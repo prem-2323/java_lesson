@@ -1,6 +1,205 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b4f3e"><title>Learn | Java Inheritance Studio</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head><body><header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">J</span><span>Java<span class="brand-light">Inheritance</span><small>LEARNING STUDIO</small></span></a><nav><a href="index.html">Introduction</a><a class="active" href="learn.html">Learn</a><a href="assessment.html">Assessment</a></nav><button class="menu-toggle" aria-label="Toggle navigation">☰</button></header><main class="wrap page-main"><div class="page-intro"><div><div class="eyebrow"><i></i> THE LEARNING ROOM</div><h1>Learn the patterns.</h1><p>Start with Single inheritance. Each lesson explains the idea in plain words, shows a small Java example, and points out what to notice.</p></div><div class="progress-box"><span>YOUR PATH</span><strong>01 <small>/ 05 topics</small></strong><div class="progress-track"><i></i></div></div></div><div class="lesson-layout"><aside class="topic-nav"><span class="aside-label">INHERITANCE TYPES</span><button data-topic="single">01 <span>Single</span><b>→</b></button><button data-topic="multilevel">02 <span>Multilevel</span><b>→</b></button><button data-topic="hierarchical">03 <span>Hierarchical</span><b>→</b></button><button data-topic="multiple">04 <span>Multiple</span><b>→</b></button><button data-topic="hybrid">05 <span>Hybrid</span><b>→</b></button><div class="sidebar-tip"><span>✦ QUICK TIP</span><p>A child class uses `extends` to reuse code from its parent.</p></div></aside><article class="lesson-panel"><div class="lesson-top"><div><div class="eyebrow" id="lesson-kicker">PATTERN 01 · THE FOUNDATION</div><h2 id="lesson-title">Single inheritance</h2></div><span class="lesson-count" id="lesson-count">01 / 05</span></div><p class="lesson-summary" id="lesson-summary"></p><div class="diagram-box"><div class="diagram-label">FOLLOW THE RELATIONSHIP <span class="motion-key">● PARENT　 → INHERITS　 ● CHILD</span></div><div id="lesson-diagram" class="diagram"></div></div><div class="lesson-details"><div><h3>What to remember</h3><p id="lesson-remember"></p></div><div class="code-wrap"><div class="code-heading"><span>JAVA EXAMPLE</span><button class="copy-code" aria-label="Copy code">Copy</button></div><pre><code id="lesson-code"></code></pre></div></div><div class="lesson-footer"><span id="lesson-note"></span><a class="button button-orange" href="practice.html">Practice this topic <span>→</span></a></div></article></div></main><footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html"><span class="brand-mark">J</span><span>Java<span class="brand-light">Inheritance</span><small>LEARNING STUDIO</small></span></a><span>Built for curious Java learners.</span><a href="practice.html">Next up: Practice →</a></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b4f3e">
+  <title>Learn &amp; Test | Java Inheritance Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+  <script src="learn.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to learning module</a>
 
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">J</span>
+        <span>
+          Java<span class="brand-light">Inheritance</span>
+          <small>B.TECH VISUAL STUDIO</small>
+        </span>
+      </a>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Introduction</a>
+        <a class="active" href="learn.html">Learn &amp; Test</a>
+        <a href="assessment.html">Assessment</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav">☰</button>
+    </div>
+  </header>
 
+  <main id="main-content" class="wrap page-main">
+    <div class="page-intro">
+      <div>
+        <div class="eyebrow"><i></i> VISUAL LEARNING + SELF-TEST MODULE</div>
+        <h1>Learn by watching. Test right here.</h1>
+        <p>Pick any Java inheritance pattern, click methods on the animated class tree to trace how the JVM finds them, then complete the self-check inside each lesson.</p>
+      </div>
+      <div class="progress-box">
+        <span>TOPICS MASTERED</span>
+        <strong><span id="mastery-count">0</span> <small>/ 5 mastered</small></strong>
+        <div class="progress-track"><i id="mastery-bar"></i></div>
+      </div>
+    </div>
 
+    <div class="learn-shell">
+      <aside class="topic-sidebar" aria-label="Inheritance topics">
+        <span class="aside-label">5 INHERITANCE PATTERNS</span>
+        <div id="topic-nav-list" class="topic-nav-list">
+          <button class="topic-btn active" type="button" data-topic="single">
+            <span class="t-num">01</span>
+            <span class="t-name">Single</span>
+            <span class="t-badge">→</span>
+          </button>
+          <button class="topic-btn" type="button" data-topic="multilevel">
+            <span class="t-num">02</span>
+            <span class="t-name">Multilevel</span>
+            <span class="t-badge">→</span>
+          </button>
+          <button class="topic-btn" type="button" data-topic="hierarchical">
+            <span class="t-num">03</span>
+            <span class="t-name">Hierarchical</span>
+            <span class="t-badge">→</span>
+          </button>
+          <button class="topic-btn" type="button" data-topic="multiple">
+            <span class="t-num">04</span>
+            <span class="t-name">Multiple</span>
+            <span class="t-badge">→</span>
+          </button>
+          <button class="topic-btn" type="button" data-topic="hybrid">
+            <span class="t-num">05</span>
+            <span class="t-name">Hybrid</span>
+            <span class="t-badge">→</span>
+          </button>
+        </div>
 
+        <div class="sidebar-callout">
+          <span>✦ B.TECH EXAM TIP</span>
+          <p>Java classes use <code class="inline-code">extends</code> for one superclass and <code class="inline-code">implements</code> for multiple interfaces.</p>
+        </div>
+      </aside>
 
+      <article class="lesson-card" id="lesson-card">
+        <div class="lesson-head">
+          <div>
+            <div class="eyebrow" id="lesson-kicker"><i></i> PATTERN 01 · THE FOUNDATION</div>
+            <h2 id="lesson-title">Single Inheritance</h2>
+          </div>
+          <span class="lesson-count-pill" id="lesson-count">01 / 05</span>
+        </div>
+
+        <p class="lesson-summary" id="lesson-summary"></p>
+
+        <div class="lesson-explain-grid">
+          <div class="analogy-card">
+            <span>REAL-WORLD ANALOGY</span>
+            <p id="lesson-analogy"></p>
+          </div>
+          <div class="rule-card-inline">
+            <span>JAVA SYNTAX RULE</span>
+            <p id="lesson-rule"></p>
+          </div>
+        </div>
+
+        <section class="sim-stage" aria-label="Interactive inheritance animation simulator">
+          <div class="sim-toolbar">
+            <span class="aside-label">INTERACTIVE ANIMATED CLASS TREE</span>
+            <div class="sim-legend">
+              <span><i class="dot-green"></i> Parent / Class</span>
+              <span><i class="dot-orange"></i> Interface / Signal</span>
+              <span><i class="dot-cream"></i> Subclass</span>
+            </div>
+          </div>
+
+          <div id="diamond-toggle-bar" class="diamond-toggle-bar hidden"></div>
+
+          <div id="sim-canvas" class="sim-canvas">
+            <svg id="sim-svg" class="sim-svg-overlay" aria-hidden="true"></svg>
+            <div id="sim-nodes" class="sim-nodes-grid"></div>
+          </div>
+
+          <div id="sim-actions-bar" class="sim-actions-bar"></div>
+
+          <div class="sim-trace-panel">
+            <div class="sim-trace-steps">
+              <strong>JVM LOOKUP TRACE</strong>
+              <ol id="sim-trace-list" class="sim-trace-list"></ol>
+            </div>
+            <div class="sim-output-box">
+              <strong>SIMULATED OUTPUT</strong>
+              <pre id="sim-output"></pre>
+            </div>
+          </div>
+        </section>
+
+        <div class="lesson-details">
+          <div class="exam-tip-box">
+            <h3><span>✓</span> What to Remember</h3>
+            <p id="lesson-remember"></p>
+            <div class="mistake-box">
+              <b>COMMON EXAM TRAP</b>
+              <p id="lesson-mistake"></p>
+            </div>
+          </div>
+
+          <div class="lesson-code-col">
+            <div class="code-block">
+              <div class="code-head">
+                <span class="code-head-left">
+                  <span class="code-dots"><i></i><i></i><i></i></span>
+                  <span id="lesson-filename">SingleDemo.java</span>
+                </span>
+                <button class="copy-code" type="button" aria-label="Copy Java code">Copy</button>
+              </div>
+              <pre><code id="lesson-code"></code></pre>
+            </div>
+            <div class="expected-output">
+              <span>PROGRAM OUTPUT</span>
+              <pre id="lesson-output"></pre>
+            </div>
+          </div>
+        </div>
+
+        <section class="self-test-card" aria-label="In-lesson self-test">
+          <div class="self-test-head">
+            <div>
+              <div class="eyebrow"><i></i> TEST YOURSELF RIGHT HERE</div>
+              <h3 id="self-test-title">Quick Check: Single Inheritance</h3>
+            </div>
+            <span id="self-test-badge" class="self-test-badge">0 / 3 Checked</span>
+          </div>
+
+          <div id="self-check-list" class="self-check-list"></div>
+
+          <div class="self-test-footer">
+            <span id="self-test-status" class="footer-note">Answer all 3 checks to earn Mastery on this topic.</span>
+            <div class="lesson-nav-actions">
+              <button id="reset-topic-checks" class="button button-ghost button-sm" type="button">↻ Retry checks</button>
+              <button id="next-topic-btn" class="button button-orange button-sm" type="button">Next Pattern →</button>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">J</span>
+        <span>
+          Java<span class="brand-light">Inheritance</span>
+          <small>B.TECH VISUAL STUDIO</small>
+        </span>
+      </a>
+      <span class="footer-note">Interactive visual learning with built-in topic self-tests.</span>
+      <div class="footer-links">
+        <a href="index.html">Introduction</a>
+        <a href="assessment.html">Assessment</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,2 +1,133 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b4f3e"><title>Final Assessment | Java Inheritance Studio</title><link rel="stylesheet" href="styles.css"><script src="assessment.js" defer></script></head><body><header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">J</span><span>Java<span class="brand-light">Inheritance</span><small>LEARNING STUDIO</small></span></a><nav><a href="index.html">Introduction</a><a href="learn.html">Learn</a><a class="active" href="assessment.html">Assessment</a></nav><button class="menu-toggle" aria-label="Toggle navigation">☰</button></header><main class="wrap page-main assessment-page"><div class="page-intro"><div><div class="eyebrow"><i></i> SHOW WHAT YOU KNOW</div><h1>Final assessment.</h1><p>Ten questions on Java inheritance. Answer at your own pace, then review your score and topics to revisit.</p></div><div class="score-card"><span>BEST MARK</span><strong><b id="best-score">—</b><small> / 10</small></strong><button id="start-assessment" class="reset-button">↻ Start assessment</button></div></div><div class="assessment-layout"><aside class="assessment-sidebar"><span class="aside-label">QUESTION PROGRESS</span><div class="assessment-dots" id="assessment-dots"></div><div class="assess-tip"><b>How marking works</b><p>Each correct answer earns 1 mark. There is no penalty for a wrong answer.</p></div></aside><section class="assessment-panel" id="assessment-panel"><div class="assessment-meta"><span id="assess-topic">SINGLE INHERITANCE</span><span id="assess-number">QUESTION 1 OF 10</span></div><div class="assess-progress"><i id="assess-progress"></i></div><h2 id="assess-question"></h2><pre id="assess-code" class="assessment-code hidden"></pre><div id="assess-answers" class="answers"></div><div id="assess-feedback" class="feedback" aria-live="polite"></div><div class="quiz-controls"><button class="button button-ghost" id="assess-prev">← Previous</button><button class="button button-green" id="assess-next">Next question →</button></div></section></div><section class="results-panel hidden" id="results-panel"><div class="results-score"><span>YOUR RESULT</span><strong id="final-mark">0 / 10</strong><p id="result-message"></p></div><div class="results-analysis"><h2>Topic review</h2><div id="topic-analysis"></div><button id="retake-assessment" class="button button-green">Try again ↻</button></div></section><div class="local-progress-note">Your results are saved in this browser. They are not sent to a teacher or shared between devices.</div></main><footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html"><span class="brand-mark">J</span><span>Java<span class="brand-light">Inheritance</span><small>LEARNING STUDIO</small></span></a><span>Progress saves in this browser.</span><a href="learn.html">Review a lesson ↑</a></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b4f3e">
+  <title>Final Assessment | Java Inheritance Studio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="shared.js" defer></script>
+  <script src="assessment.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to assessment</a>
 
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">J</span>
+        <span>
+          Java<span class="brand-light">Inheritance</span>
+          <small>B.TECH VISUAL STUDIO</small>
+        </span>
+      </a>
+      <nav id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Introduction</a>
+        <a href="learn.html">Learn &amp; Test</a>
+        <a class="active" href="assessment.html">Assessment</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-controls="primary-nav">☰</button>
+    </div>
+  </header>
+
+  <main id="main-content" class="wrap page-main">
+    <div class="page-intro">
+      <div>
+        <div class="eyebrow"><i></i> FINAL B.TECH SELF-ASSESSMENT</div>
+        <h1>Test your mastery.</h1>
+        <p>Twelve Java inheritance questions covering all 5 patterns, constructor order, <code class="inline-code">super</code>, interfaces, and exam traps.</p>
+      </div>
+      <div class="score-card">
+        <span>BEST SCORE</span>
+        <strong><b id="best-score">—</b><small> / 12</small></strong>
+        <button id="restart-assessment" class="reset-button" type="button">↻ Restart test</button>
+      </div>
+    </div>
+
+    <div class="mode-bar">
+      <div class="mode-pills" role="group" aria-label="Assessment mode">
+        <button id="mode-guided" class="mode-btn active" type="button">Guided Mode (Instant Feedback)</button>
+        <button id="mode-exam" class="mode-btn" type="button">Timed Exam Mode (10:00)</button>
+      </div>
+      <div id="exam-timer" class="timer-pill hidden">10:00</div>
+    </div>
+
+    <div id="assessment-shell" class="assessment-layout">
+      <aside class="assessment-sidebar">
+        <span class="aside-label">QUESTION MAP</span>
+        <div id="assessment-dots" class="assessment-dots"></div>
+        <div class="sidebar-callout">
+          <span>✦ MARKING GUIDE</span>
+          <p>1 mark per correct answer. Switch between Guided Mode and Timed Exam Mode anytime above.</p>
+        </div>
+      </aside>
+
+      <section id="assessment-panel" class="assessment-panel">
+        <div class="quiz-meta">
+          <span id="assess-topic" class="question-topic">SINGLE INHERITANCE</span>
+          <span id="assess-number">QUESTION 01 / 12</span>
+        </div>
+        <div class="assess-progress"><i id="assess-progress"></i></div>
+
+        <h2 id="assess-question" class="assess-question"></h2>
+
+        <div id="assess-code-wrap" class="code-block assess-code-wrap hidden">
+          <pre><code id="assess-code"></code></pre>
+        </div>
+
+        <div id="assess-answers" class="answers"></div>
+        <div id="assess-feedback" class="feedback" aria-live="polite"></div>
+
+        <div class="quiz-controls">
+          <button id="assess-prev" class="button button-ghost button-sm" type="button">← Previous</button>
+          <button id="assess-next" class="button button-orange button-sm" type="button">Next question →</button>
+        </div>
+      </section>
+    </div>
+
+    <section id="results-panel" class="results-panel hidden" aria-live="polite">
+      <div class="results-top-grid">
+        <div class="results-hero-card">
+          <div>
+            <span class="aside-label results-kicker">FINAL RESULT</span>
+            <strong id="final-mark">0 / 12</strong>
+            <p id="result-message" class="results-msg"></p>
+          </div>
+          <div class="results-actions">
+            <button id="retake-assessment" class="button button-orange button-sm" type="button">Try again ↻</button>
+            <a class="button button-cream button-sm" href="learn.html">Back to Lessons →</a>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="results-subhead">Topic Mastery Breakdown</h2>
+          <div id="topic-analysis"></div>
+        </div>
+      </div>
+
+      <div id="review-list" class="review-list"></div>
+    </section>
+
+    <div class="local-note">
+      Progress &amp; best marks are saved locally in this browser—no login or backend required.
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">J</span>
+        <span>
+          Java<span class="brand-light">Inheritance</span>
+          <small>B.TECH VISUAL STUDIO</small>
+        </span>
+      </a>
+      <span class="footer-note">Saved locally in your browser.</span>
+      <div class="footer-links">
+        <a href="index.html">Introduction</a>
+        <a href="learn.html">Learn &amp; Test</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
