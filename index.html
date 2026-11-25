@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b4f3e"><title>Java Inheritance Studio</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script></head>
+<body><header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">J</span><span>Java<span class="brand-light">Inheritance</span><small>LEARNING STUDIO</small></span></a><nav><a class="active" href="index.html">Introduction</a><a href="learn.html">Learn</a><a href="assessment.html">Assessment</a></nav><button class="menu-toggle" aria-label="Toggle navigation">☰</button></header>
+<main><section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><i></i> B.TECH · JAVA FUNDAMENTALS</div><h1>One class.<br><em>New possibilities.</em></h1><p class="hero-lead">Start with a simple idea: one class can reuse code from another. Learn each type with everyday examples, small Java programs, and quick questions.</p><div class="hero-actions"><a class="button button-orange" href="learn.html">Start learning <span>↗</span></a><a class="text-link" href="practice.html">Jump to practice <span>→</span></a></div><div class="hero-note"><span class="note-icon">✦</span> A visual guide to 5 inheritance patterns</div></div><div class="hero-visual"><div class="visual-label">THE BIG IDEA <span>01 / 05</span></div><div class="class-card parent-card"><span class="card-type">PARENT CLASS</span><strong>Vehicle</strong><code>move()</code><code>fuelType</code></div><div class="connector"><span>extends</span></div><div class="child-row"><div class="class-card child-card"><span class="card-type">CHILD CLASS</span><strong>Car</strong><code>openTrunk()</code></div><div class="class-card child-card"><span class="card-type">CHILD CLASS</span><strong>Bike</strong><code>kickStart()</code></div></div><div class="visual-caption">Children reuse what the parent already knows.</div><div class="visual-decoration">{ }</div></div></section>
+<section class="intro-band"><div class="wrap band-grid"><div><div class="eyebrow dark-eyebrow">START WITH THE WHY</div><h2>Reuse code.<br>Understand classes.</h2></div><div class="band-copy"><p>Inheritance lets one class take on the fields and methods of another. In Java, the child class uses <code>extends</code> to inherit from a parent class.</p><div class="code-line"><span>class</span> Car <span>extends</span> Vehicle <span>{ }</span><button class="copy-code" aria-label="Copy code">Copy</button></div><p class="small-muted">Think of it like a family: a child gets shared traits, then adds its own.</p></div></div></section>
+<section class="wrap intro-example"><div class="intro-example-heading"><div class="eyebrow"><i></i> YOUR FIRST INHERITANCE EXAMPLE</div><h2>Watch a Dog reuse Animal’s code.</h2><p>You do not need to memorize the code yet. Follow the class names and look for the word <code>extends</code>.</p></div><div class="intro-example-grid"><div class="intro-steps"><div class="intro-step"><span>01</span><div><b>Find the parent class</b><p><code>Animal</code> has an <code>eat()</code> method that can be shared.</p></div></div><div class="intro-step"><span>02</span><div><b>Find the child class</b><p><code>Dog extends Animal</code> means Dog inherits from Animal.</p></div></div><div class="intro-step"><span>03</span><div><b>Use the inherited method</b><p>A Dog object can call <code>eat()</code>, even though eat() is written in Animal.</p></div></div><div class="intro-vocab"><b>Quick vocabulary</b><span><code>class</code> a kind of object</span><span><code>method</code> an action a class can do</span><span><code>object</code> one usable example of a class</span></div></div><div class="intro-code-panel"><div class="intro-code-title"><span>JAVA EXAMPLE</span><span>Single inheritance</span></div><pre><code>class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Dog is barking");
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Dog pet = new Dog();
+        pet.eat();
+        pet.bark();
+    }
+}</code></pre><div class="intro-output"><span>PROGRAM OUTPUT</span><pre>Animal is eating
+Dog is barking</pre></div></div></div><div class="intro-tip"><span>REMEMBER</span><p>The arrow points from the child to the parent idea: Dog <code>extends</code> Animal, so Dog can reuse Animal’s methods.</p></div></section><section class="wrap topics-section"><div class="section-heading"><div><div class="eyebrow">YOUR LEARNING PATH</div><h2>Five inheritance topics.</h2></div><a class="text-link" href="learn.html">Explore all topics →</a></div><div class="topic-grid"><a class="topic-card" href="learn.html?topic=single"><span class="topic-num">01</span><span class="topic-icon">↳</span><h3>Single</h3><p>One child inherits from one parent.</p><span class="topic-arrow">↗</span></a><a class="topic-card" href="learn.html?topic=multilevel"><span class="topic-num">02</span><span class="topic-icon">⌁</span><h3>Multilevel</h3><p>A chain of inheritance across levels.</p><span class="topic-arrow">↗</span></a><a class="topic-card" href="learn.html?topic=hierarchical"><span class="topic-num">03</span><span class="topic-icon">⑂</span><h3>Hierarchical</h3><p>Multiple children share one parent.</p><span class="topic-arrow">↗</span></a><a class="topic-card" href="learn.html?topic=multiple"><span class="topic-num">04</span><span class="topic-icon">⤧</span><h3>Multiple</h3><p>What Java supports—and how to model it.</p><span class="topic-arrow">↗</span></a><a class="topic-card" href="learn.html?topic=hybrid"><span class="topic-num">05</span><span class="topic-icon">✣</span><h3>Hybrid</h3><p>A combination of inheritance patterns.</p><span class="topic-arrow">↗</span></a></div></section>
+<section class="cta wrap"><div><div class="eyebrow">READY WHEN YOU ARE</div><h2>Learn it. Try it. Own it.</h2><p>Short lessons, animated examples, practice questions, and a final assessment.</p></div><a class="button button-green" href="practice.html">Try the practice quiz <span>→</span></a></section></main>
+<footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html"><span class="brand-mark">J</span><span>Java<span class="brand-light">Inheritance</span><small>LEARNING STUDIO</small></span></a><span>Built for curious Java learners.</span><a href="learn.html">Back to learning ↑</a></div></footer></body></html>
+
+
+
+
+
+
